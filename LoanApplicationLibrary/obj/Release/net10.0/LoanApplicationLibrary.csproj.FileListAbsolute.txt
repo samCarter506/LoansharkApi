@@ -1,0 +1,14 @@
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\bin\Release\net10.0\LoanApplicationLibrary.deps.json
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\bin\Release\net10.0\LoanApplicationLibrary.runtimeconfig.json
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\bin\Release\net10.0\LoanApplicationLibrary.dll
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\bin\Release\net10.0\LoanApplicationLibrary.pdb
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.dll
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\refint\LoanApplicationLibrary.dll
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.pdb
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\LoanApplicationLibrary.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Release\net10.0\ref\LoanApplicationLibrary.dll
