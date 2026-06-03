@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BFA60519-61C5-4815-B8A1-CE77E2155A0D}|Solution Items{BFA60519-61C5-4815-B8A1-CE77E2155A0D}|C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{BFA60519-61C5-4815-B8A1-CE77E2155A0D}|Solution Items{BFA60519-61C5-4815-B8A1-CE77E2155A0D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -175,11 +179,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-03T19:36:57.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "LoanModel.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\LoanModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\LoanModel.cs",
@@ -191,19 +208,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAkwI0AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowI0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T12:30:15.101Z"
+              "WhenOpened": "2026-05-12T12:30:15.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ApplicationController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\ApplicationController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\ApplicationController.cs",
@@ -221,14 +239,14 @@
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Program.cs",
               "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Program.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Program.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAUwGcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwGMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T12:46:16.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
@@ -240,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ApplicationDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
@@ -252,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UserModel.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserModel.cs",
@@ -260,12 +278,11 @@
               "RelativeToolTip": "LoanApplicationAPI\\Models\\UserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T09:05:48.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T09:05:48.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\appsettings.json",
@@ -278,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "SystemCodeData.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\SystemCodeData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\SystemCodeData.cs",
@@ -290,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LoanCalculationData.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\LoanCalculationData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\LoanCalculationData.cs",
@@ -302,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20260526174229_sp added.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
               "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
@@ -314,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ExpensesModel.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ExpensesModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ExpensesModel.cs",
@@ -326,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ApplicationDocument.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
@@ -338,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BankingModel.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\BankingModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\BankingModel.cs",
@@ -350,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StatusDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
@@ -362,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "RolesDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
@@ -374,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "SystemCodeDetailsController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
@@ -386,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SystemCodeController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
@@ -394,11 +411,12 @@
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAcwJIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T15:57:18.635Z"
+              "WhenOpened": "2026-05-21T15:57:18.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\UsersController.cs",
@@ -406,11 +424,12 @@
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\UsersController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:00:16.478Z"
+              "WhenOpened": "2026-05-24T20:00:16.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "AuditsController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuditsController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\AuditsController.cs",
@@ -422,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserRolesController.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UserRolesController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\UserRolesController.cs",
@@ -434,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\JwtService.cs",
@@ -446,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "20260524181302_Second try.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
@@ -458,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ApplicationModel.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ApplicationModel.cs",
@@ -470,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\ApplicationUser.cs",
@@ -482,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
               "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
@@ -494,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
               "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
@@ -506,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
@@ -518,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "SystemCodeDetails.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
@@ -530,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "AuditDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
@@ -542,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "SystemCodeDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
@@ -554,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Properties\\launchSettings.json",
@@ -566,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "UserAuditData.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\UserAuditData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\UserAuditData.cs",
@@ -578,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "UserAudit.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserAudit.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserAudit.cs",
@@ -590,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "DocumentsDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
@@ -602,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\appsettings.Development.json",
@@ -614,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ApplicationData.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Data\\ApplicationData.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Data\\ApplicationData.cs",
@@ -626,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
@@ -638,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "UserRoles.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserRoles.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserRoles.cs",
@@ -650,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "DataAccess.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
@@ -662,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "IDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
@@ -674,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "IUserAuditData.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\IUserAuditData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\IUserAuditData.cs",

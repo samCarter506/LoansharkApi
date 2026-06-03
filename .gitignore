@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User files
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Node
+node_modules/
+build/
+
+# VS Code
+.vscode/
+
+# Publish
+publish/
