@@ -97,7 +97,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy
-                .WithOrigins("http://localhost:3000", "https://loanshark-phi.vercel.app")
+                .WithOrigins("http://localhost:3000", "https://loanshark-phi.vercel.app", "https://loanshark-q4pwayl2p-thamaesamuels-projects.vercel.app")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials();
