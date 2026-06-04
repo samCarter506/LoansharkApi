@@ -208,12 +208,25 @@ public async Task<IActionResult> GetApplication(int id)
 
 
                 _context.Applications.Add(applicationModel);
-                await _context.SaveChangesAsync(); 
+               // await _context.SaveChangesAsync();
 
-              
-    
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (Exception ex)
+                {
+                    return StatusCode(500, new
+                    {
+                        Error = ex.Message,
+                        InnerError = ex.InnerException?.Message,
+                        StackTrace = ex.StackTrace
+                    });
+                }
 
-               
+
+
+
                 employerModel.ApplicationId = applicationModel.Id; 
                 employerModel.NetSalary = obj.NetSalary;
                 employerModel.GrossSalary = obj.GrossSalary;

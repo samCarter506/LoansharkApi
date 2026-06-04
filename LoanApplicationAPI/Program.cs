@@ -92,16 +92,16 @@ builder.Services.AddAuthorization();
 // ==========================================
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
-    {
-        policy
-            .SetIsOriginAllowed(origin =>
-                origin.Contains("vercel.app") ||
-                origin.Contains("localhost"))
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
-    });
+    options.AddPolicy(
+        "AllowFrontend",
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:3000", "https://loanshark-phi.vercel.app", "https://loanshark-q4pwayl2p-thamaesamuels-projects.vercel.app")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
+        });
 });
 
 // ==========================================
