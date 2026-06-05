@@ -396,6 +396,8 @@ namespace LoanApplicationAPI.Controllers
                 return BadRequest(new
                 {
                     error = ex.Message,
+                    innerError = ex.InnerException?.Message,
+                    innerInnerError = ex.InnerException?.InnerException?.Message,
                     stack = ex.StackTrace
                 });
             }
