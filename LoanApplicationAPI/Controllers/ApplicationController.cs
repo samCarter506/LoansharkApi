@@ -238,84 +238,90 @@ namespace LoanApplicationAPI.Controllers
         }
         [Authorize]
         [HttpPost]
-
         public async Task<IActionResult> CreateApplication([FromForm] ApplicantDto obj)
         {
-            ApplicationModel applicationModel = new ApplicationModel();
-            BankingModel bankingModel = new BankingModel();
-            EmployerModel employerModel = new EmployerModel();
-            ApplicationDocument document = new ApplicationDocument();
-            ExpensesModel expenses = new ExpensesModel();
-            LoanModel loan = new LoanModel();
-
-
-            await using var transaction = await _context.Database.BeginTransactionAsync();
+            await using var transaction =
+                await _context.Database.BeginTransactionAsync();
 
             try
             {
+                // ============================
+                // APPLICATION
+                // ============================
 
-                applicationModel.Email = obj.Email;
-                applicationModel.Surname = obj.Surname;
-                applicationModel.Address = obj.Address;
-                applicationModel.Cellphone = obj.Cellphone;
-                applicationModel.FullName = obj.FullName;
-                applicationModel.NationalId = obj.NationalId;
-
+                var applicationModel = new ApplicationModel
+                {
+                    Email = obj.Email,
+                    Surname = obj.Surname,
+                    Address = obj.Address,
+                    Cellphone = obj.Cellphone,
+                    FullName = obj.FullName,
+                    NationalId = obj.NationalId
+                };
 
                 _context.Applications.Add(applicationModel);
-                // await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
-                try
+                // ============================
+                // EMPLOYER
+                // ============================
+
+                var employerModel = new EmployerModel
                 {
-                    await _context.SaveChangesAsync();
-                }
-                catch (Exception ex)
-                {
-                    return StatusCode(500, new
-                    {
-                        Error = ex.Message,
-                        InnerError = ex.InnerException?.Message,
-                        StackTrace = ex.StackTrace
-                    });
-                }
-
-
-
-
-                employerModel.ApplicationId = applicationModel.Id;
-                employerModel.NetSalary = obj.NetSalary;
-                employerModel.GrossSalary = obj.GrossSalary;
-                employerModel.Employer = obj.Employer;
+                    ApplicationId = applicationModel.Id,
+                    Employer = obj.Employer,
+                    GrossSalary = obj.GrossSalary,
+                    NetSalary = obj.NetSalary
+                };
 
                 _context.Employers.Add(employerModel);
-                //===========================
-                //Expenses
-                //===========================
-                expenses.ApplicationId = applicationModel.Id;
-                expenses.dependents = obj.dependents;
-                expenses.waterExpenses = obj.waterExpenses;
-                expenses.otherExpenses = obj.otherExpenses;
-                expenses.transportExpenses = obj.transportExpenses;
-                expenses.foodExpenses = obj.foodExpenses;
-                expenses.electricityExpenses = obj.electricityExpenses;
-                expenses.existingLoanRepayments = obj.existingLoanRepayments;
-                expenses.rentAmount = obj.rentAmount;
+                await _context.SaveChangesAsync();
+
+                // ============================
+                // EXPENSES
+                // ============================
+
+                var expenses = new ExpensesModel
+                {
+                    ApplicationId = applicationModel.Id,
+                    dependents = obj.dependents,
+                    rentAmount = obj.rentAmount,
+                    foodExpenses = obj.foodExpenses,
+                    transportExpenses = obj.transportExpenses,
+                    electricityExpenses = obj.electricityExpenses,
+                    waterExpenses = obj.waterExpenses,
+                    existingLoanRepayments = obj.existingLoanRepayments,
+                    otherExpenses = obj.otherExpenses,
+                    monthlyExpenses = obj.monthlyExpenses
+                };
 
                 _context.MonthlyExpense.Add(expenses);
+                await _context.SaveChangesAsync();
 
-                //===========================
-                // Loan
-                //===========================
-                loan.Amount = obj.Amount;
-                loan.Status = "Pending";
-                // loan.loanTermMonths= obj.loanTermMonths;
-                //  loan.interestRate=obj.interestRate;
-                loan.ApplicationId = applicationModel.Id;
+                // ============================
+                // LOAN
+                // ============================
+
+                var loan = new LoanModel
+                {
+                    ApplicationId = applicationModel.Id,
+                    Amount = obj.Amount,
+                    Status = "Pending",
+
+                    // Set defaults in case DB columns are NOT NULL
+                    interestRate = 0,
+                    loanTermMonths = 0,
+                    monthlyPayment = 0,
+                    RemainingBalance = 0
+                };
+
                 _context.Loan.Add(loan);
+                await _context.SaveChangesAsync();
 
-                // ==========================
+                // ============================
                 // ID DOCUMENT
-                // ==========================
+                // ============================
+
                 if (obj.IdDocument != null)
                 {
                     var path = await SaveFile(obj.IdDocument);
@@ -328,11 +334,14 @@ namespace LoanApplicationAPI.Controllers
                         FilePath = path,
                         UploadedDate = DateTime.Now
                     });
+
+                    await _context.SaveChangesAsync();
                 }
 
-                // ==========================
+                // ============================
                 // BANK STATEMENT
-                // ==========================
+                // ============================
+
                 if (obj.BankStatement != null)
                 {
                     var path = await SaveFile(obj.BankStatement);
@@ -345,11 +354,14 @@ namespace LoanApplicationAPI.Controllers
                         FilePath = path,
                         UploadedDate = DateTime.Now
                     });
+
+                    await _context.SaveChangesAsync();
                 }
 
-                // ==========================
+                // ============================
                 // PAYSLIP
-                // ==========================
+                // ============================
+
                 if (obj.Payslip != null)
                 {
                     var path = await SaveFile(obj.Payslip);
@@ -362,31 +374,45 @@ namespace LoanApplicationAPI.Controllers
                         FilePath = path,
                         UploadedDate = DateTime.Now
                     });
+
+                    await _context.SaveChangesAsync();
                 }
 
+                // ============================
+                // AUDIT
+                // ============================
 
-                string json = JsonSerializer.Serialize(obj);
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var userId =
+                    User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                UserAudit userAudit = new UserAudit
+                var userAudit = new UserAudit
                 {
                     TransactionType = "Application Add",
-                    TransactionData = json,
+                    TransactionData = JsonSerializer.Serialize(obj),
                     TransactionDate = DateTime.Now,
                     CreatedById = userId
                 };
 
                 _context.Audit.Add(userAudit);
-
-                // =====================
-                // SAVE ALL
-                // =====================
                 await _context.SaveChangesAsync();
+
                 await transaction.CommitAsync();
+
                 return Ok(new
                 {
                     message = "Application created successfully",
                     applicationId = applicationModel.Id
+                });
+            }
+            catch (DbUpdateException ex)
+            {
+                await transaction.RollbackAsync();
+
+                return BadRequest(new
+                {
+                    Error = ex.Message,
+                    InnerError = ex.InnerException?.Message,
+                    SqlError = ex.InnerException?.InnerException?.Message
                 });
             }
             catch (Exception ex)
@@ -395,10 +421,9 @@ namespace LoanApplicationAPI.Controllers
 
                 return BadRequest(new
                 {
-                    error = ex.Message,
-                    innerError = ex.InnerException?.Message,
-                    innerInnerError = ex.InnerException?.InnerException?.Message,
-                    stack = ex.StackTrace
+                    Error = ex.Message,
+                    InnerError = ex.InnerException?.Message,
+                    StackTrace = ex.StackTrace
                 });
             }
         }
@@ -632,32 +657,39 @@ namespace LoanApplicationAPI.Controllers
         }
         private async Task<string> SaveFile(IFormFile file)
         {
-            if (file == null) return null;
-
-            var uploadsFolder = Path.Combine(
-                Directory.GetCurrentDirectory(),
-                "wwwroot",
-                "uploads"
-            );
-
-            if (!Directory.Exists(uploadsFolder))
-                Directory.CreateDirectory(uploadsFolder);
-
-            var uniqueFileName =
-                Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-
-            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
+            try
             {
+                if (file == null)
+                    return null;
+
+                var uploadsFolder = Path.Combine(
+                    Directory.GetCurrentDirectory(),
+                    "wwwroot",
+                    "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var uniqueFileName =
+                    $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+
+                var filePath =
+                    Path.Combine(uploadsFolder, uniqueFileName);
+
+                using var stream =
+                    new FileStream(filePath, FileMode.Create);
+
                 await file.CopyToAsync(stream);
+
+                return "/uploads/" + uniqueFileName;
             }
-
-            return "/uploads/" + uniqueFileName;
+            catch (Exception ex)
+            {
+                throw new Exception(
+                    $"SaveFile Error: {ex.Message}",
+                    ex);
+            }
         }
-
-
-
 
     }
 
