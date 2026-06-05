@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LoanApplicationAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260524181302_Second try")]
-    partial class Secondtry
+    [Migration("20260605105153_first migration")]
+    partial class firstmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -116,6 +116,15 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("RaceId");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("LoanApplicationAPI.Models.DTO.StatusDto", b =>
+                {
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("StatusDtos");
                 });
 
             modelBuilder.Entity("LoanApplicationAPI.Models.SystemCode", b =>
@@ -235,7 +244,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasIndex("ModifiedById");
 
-                    b.ToTable("Audit");
+                    b.ToTable("Audit", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationAPI.Models.UserRoles", b =>
@@ -295,7 +304,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasIndex("ApplicationId");
 
-                    b.ToTable("Documents");
+                    b.ToTable("Documents", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.ApplicationModel", b =>
@@ -332,7 +341,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Applications");
+                    b.ToTable("Applications", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.BankingModel", b =>
@@ -363,7 +372,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Bankings");
+                    b.ToTable("Bankings", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.EmployerModel", b =>
@@ -392,7 +401,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Employers");
+                    b.ToTable("Employers", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.ExpensesModel", b =>
@@ -438,7 +447,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("MonthlyExpense");
+                    b.ToTable("MonthlyExpense", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.LoanModel", b =>
@@ -456,6 +465,10 @@ namespace LoanApplicationAPI.Migrations
                     b.Property<int>("ApplicationId")
                         .HasColumnType("int");
 
+                    b.Property<decimal?>("RemainingBalance")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
@@ -466,6 +479,7 @@ namespace LoanApplicationAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal?>("monthlyPayment")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
@@ -473,7 +487,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Loan");
+                    b.ToTable("Loan", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -689,7 +703,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Banking")
                         .HasForeignKey("LoanApplicationLibrary.Models.BankingModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -700,7 +714,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Employer")
                         .HasForeignKey("LoanApplicationLibrary.Models.EmployerModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -711,7 +725,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Expenses")
                         .HasForeignKey("LoanApplicationLibrary.Models.ExpensesModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -722,7 +736,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Loan")
                         .HasForeignKey("LoanApplicationLibrary.Models.LoanModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");

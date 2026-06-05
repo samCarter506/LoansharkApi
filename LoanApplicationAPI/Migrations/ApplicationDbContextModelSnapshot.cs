@@ -241,7 +241,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasIndex("ModifiedById");
 
-                    b.ToTable("Audit");
+                    b.ToTable("Audit", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationAPI.Models.UserRoles", b =>
@@ -301,7 +301,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasIndex("ApplicationId");
 
-                    b.ToTable("Documents");
+                    b.ToTable("Documents", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.ApplicationModel", b =>
@@ -338,7 +338,7 @@ namespace LoanApplicationAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Applications");
+                    b.ToTable("Applications", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.BankingModel", b =>
@@ -369,7 +369,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Bankings");
+                    b.ToTable("Bankings", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.EmployerModel", b =>
@@ -398,7 +398,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Employers");
+                    b.ToTable("Employers", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.ExpensesModel", b =>
@@ -444,7 +444,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("MonthlyExpense");
+                    b.ToTable("MonthlyExpense", (string)null);
                 });
 
             modelBuilder.Entity("LoanApplicationLibrary.Models.LoanModel", b =>
@@ -456,12 +456,14 @@ namespace LoanApplicationAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Amount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ApplicationId")
                         .HasColumnType("int");
 
                     b.Property<decimal?>("RemainingBalance")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Status")
@@ -482,7 +484,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasIndex("ApplicationId")
                         .IsUnique();
 
-                    b.ToTable("Loan");
+                    b.ToTable("Loan", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -698,7 +700,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Banking")
                         .HasForeignKey("LoanApplicationLibrary.Models.BankingModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -709,7 +711,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Employer")
                         .HasForeignKey("LoanApplicationLibrary.Models.EmployerModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -720,7 +722,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Expenses")
                         .HasForeignKey("LoanApplicationLibrary.Models.ExpensesModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");
@@ -731,7 +733,7 @@ namespace LoanApplicationAPI.Migrations
                     b.HasOne("LoanApplicationLibrary.Models.ApplicationModel", "application")
                         .WithOne("Loan")
                         .HasForeignKey("LoanApplicationLibrary.Models.LoanModel", "ApplicationId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("application");

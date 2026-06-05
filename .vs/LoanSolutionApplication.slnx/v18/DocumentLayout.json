@@ -1,174 +1,177 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\",
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\models\\expensesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\expensesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\loancalculationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\loancalculationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\systemcodedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\systemcodedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\models\\loanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\loanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\models\\bankingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\bankingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\models\\applicationdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\applicationdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\systemcodedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\systemcodedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\systemcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\systemcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\systemcodedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\models\\expensesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\expensesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\applicationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\applicationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\loancalculationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\loancalculationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\systemcodedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\systemcodedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\models\\loanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\loanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\models\\bankingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\bankingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\models\\applicationdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\models\\applicationdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\statusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\rolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\systemcodedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\systemcodedetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\systemcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\systemcodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\controllers\\auditscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\systemcodedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\systemcodedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\systemcodedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\systemcodedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\systemcodedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\auditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\auditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\auditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\userauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\userauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\userauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\useraudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\useraudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\useraudit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\documentsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\documentsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\documentsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\data\\applicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\data\\applicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\data\\applicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\models\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\models\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\models\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationlibrary\\dataaccess\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationlibrary\\dataaccess\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B584ED6-01B6-8856-82BA-C4004FFA24A9}|LoanApplicationLibrary\\LoanApplicationLibrary.csproj|solutionrelative:loanapplicationlibrary\\dataaccess\\idataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\services\\iuserauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\source\\repos\\loansolutionapplication\\loanapplicationapi\\services\\iuserauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\services\\iuserauditdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|c:\\users\\lenovo\\documents\\loansolutionapplication\\loanapplicationapi\\migrations\\20260524181302_second try.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5623656-9FED-9B41-2983-2006C84316ED}|LoanApplicationAPI\\LoanApplicationAPI.csproj|solutionrelative:loanapplicationapi\\migrations\\20260524181302_second try.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AfforbailityCheckService\\Worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AfforbailityCheckService\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{089100B1-113F-4E66-888A-E83F3999EAFD}|Solution Items{089100B1-113F-4E66-888A-E83F3999EAFD}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
@@ -184,23 +187,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20260605105153_first migration.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Migrations\\20260605105153_first migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T10:51:54.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ApplicationController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\ApplicationController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\ApplicationController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\ApplicationController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\ApplicationController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\ApplicationController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\ApplicationController.cs",
-              "ViewState": "AgIAAJUCAAAAAAAAAAAUwJ4CAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAJsCAAAAAAAAAAAUwKwCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-06T09:30:24.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.json",
               "RelativeToolTip": "LoanApplicationAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -209,11 +225,83 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationModel.cs",
+              "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ApplicationModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationModel.cs",
+              "RelativeToolTip": "LoanApplicationLibrary\\Models\\ApplicationModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T09:51:32.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAUwOoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T12:18:43.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExpensesModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ExpensesModel.cs",
+              "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ExpensesModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ExpensesModel.cs",
+              "RelativeToolTip": "LoanApplicationLibrary\\Models\\ExpensesModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T09:56:40.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Program.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAUwFkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T12:46:16.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:05:57.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserModel.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:05:48.394Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 42,
               "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\.gitignore",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\.gitignore",
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -222,86 +310,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserModel.cs",
-              "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserModel.cs",
-              "RelativeToolTip": "LoanApplicationAPI\\Models\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T09:05:48.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationModel.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationModel.cs",
-              "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ApplicationModel.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationModel.cs",
-              "RelativeToolTip": "LoanApplicationLibrary\\Models\\ApplicationModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T09:51:32.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
-              "RelativeToolTip": "LoanApplicationAPI\\Services\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T12:18:43.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExpensesModel.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ExpensesModel.cs",
-              "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ExpensesModel.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ExpensesModel.cs",
-              "RelativeToolTip": "LoanApplicationLibrary\\Models\\ExpensesModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAcwB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T09:56:40.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Program.cs",
-              "RelativeDocumentMoniker": "LoanApplicationAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Program.cs",
-              "RelativeToolTip": "LoanApplicationAPI\\Program.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T12:46:16.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ApplicationDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\ApplicationDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T19:31:34.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T19:31:34.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAowI0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -309,11 +333,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "LoanModel.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\LoanModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\LoanModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\LoanModel.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\LoanModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\LoanModel.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\Models\\LoanModel.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA6wBAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -321,11 +345,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SystemCodeData.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\SystemCodeData.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\SystemCodeData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\SystemCodeData.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\SystemCodeData.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\SystemCodeData.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Services\\SystemCodeData.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -333,11 +357,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "LoanCalculationData.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\LoanCalculationData.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\LoanCalculationData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\LoanCalculationData.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\LoanCalculationData.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\LoanCalculationData.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Services\\LoanCalculationData.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -345,23 +369,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "20260526174229_sp added.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
+              "RelativeDocumentMoniker": "LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
+              "RelativeToolTip": "LoanApplicationAPI\\Migrations\\20260526174229_sp added.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-26T17:42:32.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ApplicationDocument.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\Models\\ApplicationDocument.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAqwBgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -369,11 +393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "BankingModel.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\BankingModel.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\BankingModel.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Models\\BankingModel.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\BankingModel.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Models\\BankingModel.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\Models\\BankingModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -381,11 +405,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "StatusDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\StatusDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -393,11 +417,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RolesDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\RolesDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -405,11 +429,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "SystemCodeDetailsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\SystemCodeDetailsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -417,37 +441,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "SystemCodeController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\SystemCodeController.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAcwJIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T15:57:18.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-21T15:57:18.635Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UsersController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\UsersController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwAkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T20:00:16.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T20:00:16.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "AuditsController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuditsController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuditsController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\AuditsController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuditsController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\AuditsController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\AuditsController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBIAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -455,11 +477,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserRolesController.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UserRolesController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UserRolesController.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Controllers\\UserRolesController.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UserRolesController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Controllers\\UserRolesController.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Controllers\\UserRolesController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -467,11 +489,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\JwtService.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\JwtService.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Services\\JwtService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -479,36 +501,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "20260524181302_Second try.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
-              "RelativeDocumentMoniker": "LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
-              "RelativeToolTip": "LoanApplicationAPI\\Migrations\\20260524181302_Second try.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T18:13:04.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "LoanApplicationAPI\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-08T09:05:57.642Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 40,
               "Title": "Worker.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
+              "RelativeDocumentMoniker": "AfforbailityCheckService\\Worker.cs",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
-              "RelativeToolTip": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\Worker.cs",
+              "RelativeToolTip": "AfforbailityCheckService\\Worker.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-22T08:24:29.909Z"
@@ -518,20 +516,20 @@
               "DocumentIndex": 41,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
+              "RelativeDocumentMoniker": "AfforbailityCheckService\\appsettings.json",
               "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
-              "RelativeToolTip": "..\\..\\source\\repos\\LoanSolutionApplication\\AfforbailityCheckService\\appsettings.json",
+              "RelativeToolTip": "AfforbailityCheckService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-05-22T08:20:08.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -539,11 +537,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "SystemCodeDetails.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\SystemCodeDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAUwA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,11 +549,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "AuditDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\AuditDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -563,11 +561,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "SystemCodeDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\SystemCodeDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -575,11 +573,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "LoanApplicationAPI\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -587,11 +585,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "UserAuditData.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\UserAuditData.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\UserAuditData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\UserAuditData.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\UserAuditData.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\UserAuditData.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Services\\UserAuditData.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -599,11 +597,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "UserAudit.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserAudit.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserAudit.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserAudit.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserAudit.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserAudit.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\UserAudit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -611,11 +609,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "DocumentsDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\DocumentsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -623,11 +621,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\appsettings.Development.json",
               "RelativeToolTip": "LoanApplicationAPI\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -635,11 +633,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ApplicationData.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Data\\ApplicationData.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Data\\ApplicationData.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\Data\\ApplicationData.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\Data\\ApplicationData.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\Data\\ApplicationData.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\Data\\ApplicationData.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAmwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -647,11 +645,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\DTO\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -659,11 +657,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "UserRoles.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserRoles.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserRoles.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Models\\UserRoles.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserRoles.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Models\\UserRoles.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Models\\UserRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -671,11 +669,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "DataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\DataAccess\\DataAccess.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAgwBYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -683,11 +681,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "IDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
               "RelativeDocumentMoniker": "LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
               "RelativeToolTip": "LoanApplicationLibrary\\DataAccess\\IDataAccess.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -695,11 +693,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "IUserAuditData.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\IUserAuditData.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\IUserAuditData.cs",
               "RelativeDocumentMoniker": "LoanApplicationAPI\\Services\\IUserAuditData.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\IUserAuditData.cs",
+              "ToolTip": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationAPI\\Services\\IUserAuditData.cs",
               "RelativeToolTip": "LoanApplicationAPI\\Services\\IUserAuditData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

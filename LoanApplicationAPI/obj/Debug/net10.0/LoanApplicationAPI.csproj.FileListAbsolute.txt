@@ -334,3 +334,5 @@ C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\n
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\net10.0\LoanApplicationAPI.pdb
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\net10.0\LoanApplicationAPI.genruntimeconfig.cache
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\net10.0\ref\LoanApplicationAPI.dll
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\net10.0\LoanApplicationAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationAPI\obj\Debug\net10.0\LoanApplicationAPI.sourcelink.json

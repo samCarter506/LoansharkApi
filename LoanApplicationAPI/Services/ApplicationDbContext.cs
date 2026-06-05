@@ -18,31 +18,51 @@ namespace LoanApplicationAPI.Services
         // =========================
         // SYSTEM TABLES
         // =========================
+
         public DbSet<SystemCode> SystemCode { get; set; }
         public DbSet<SystemCodeDetails> SystemCodeDetails { get; set; }
         public DbSet<UserAudit> Audit { get; set; }
         public DbSet<ApplicationDocument> Documents { get; set; }
         public DbSet<StatusDto> StatusDtos { get; set; }
 
-
         // =========================
         // APPLICATION TABLES
         // =========================
+
         public DbSet<ApplicationModel> Applications { get; set; }
         public DbSet<EmployerModel> Employers { get; set; }
         public DbSet<BankingModel> Bankings { get; set; }
         public DbSet<ExpensesModel> MonthlyExpense { get; set; }
         public DbSet<LoanModel> Loan { get; set; }
 
-
-        // =========================
-        // ROLES
-        // =========================
-        public new DbSet<UserRoles> Roles { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // =========================
+            // TABLE NAMES
+            // =========================
+
+            modelBuilder.Entity<ApplicationModel>()
+                .ToTable("Applications");
+
+            modelBuilder.Entity<EmployerModel>()
+                .ToTable("Employers");
+
+            modelBuilder.Entity<BankingModel>()
+                .ToTable("Bankings");
+
+            modelBuilder.Entity<ExpensesModel>()
+                .ToTable("MonthlyExpense");
+
+            modelBuilder.Entity<LoanModel>()
+                .ToTable("Loan");
+
+            modelBuilder.Entity<ApplicationDocument>()
+                .ToTable("Documents");
+
+            modelBuilder.Entity<UserAudit>()
+                .ToTable("Audit");
 
             // =========================
             // SYSTEM CODE RELATIONSHIPS
@@ -59,18 +79,6 @@ namespace LoanApplicationAPI.Services
                 .WithMany()
                 .HasForeignKey(f => f.ModifiedUserId)
                 .OnDelete(DeleteBehavior.Restrict);
-
-            //==========================
-            // EXPENSES
-            //==========================
-            modelBuilder.Entity<ExpensesModel>()
-                .HasOne(f => f.application).WithMany()
-                .HasForeignKey(f => f.ApplicationId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            // =========================
-            // SYSTEM CODE DETAILS
-            // =========================
 
             modelBuilder.Entity<SystemCodeDetails>()
                 .HasOne(f => f.CreatedUser)
@@ -109,21 +117,6 @@ namespace LoanApplicationAPI.Services
             // =========================
             // APPLICATION USER LOOKUPS
             // =========================
-            // APPLICATION -> LOAN
-
-            modelBuilder.Entity<ApplicationModel>()
-                .HasOne(a => a.Loan)
-                .WithOne(l => l.application)
-                .HasForeignKey<LoanModel>(l => l.ApplicationId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            // APPLICATION -> EXPENSES
-
-            modelBuilder.Entity<ApplicationModel>()
-                .HasOne(a => a.Expenses)
-                .WithOne(e => e.application)
-                .HasForeignKey<ExpensesModel>(e => e.ApplicationId)
-                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<ApplicationUser>()
                 .HasOne(f => f.Gender)
@@ -148,41 +141,92 @@ namespace LoanApplicationAPI.Services
                 .WithMany()
                 .HasForeignKey(f => f.HomeLanguage)
                 .OnDelete(DeleteBehavior.Restrict);
-            modelBuilder.Entity<ApplicationDocument>()
-    .HasOne(d => d.Application)
-    .WithMany(a => a.Documents)
-    .HasForeignKey(d => d.ApplicationId)
-    .OnDelete(DeleteBehavior.Cascade);
+
+            // =========================
+            // APPLICATION -> LOAN
+            // =========================
+
+            modelBuilder.Entity<LoanModel>()
+                .HasIndex(l => l.ApplicationId)
+                .IsUnique();
+
+            modelBuilder.Entity<ApplicationModel>()
+                .HasOne(a => a.Loan)
+                .WithOne(l => l.application)
+                .HasForeignKey<LoanModel>(l => l.ApplicationId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // =========================
+            // APPLICATION -> EXPENSES
+            // =========================
+
+            modelBuilder.Entity<ExpensesModel>()
+                .HasIndex(e => e.ApplicationId)
+                .IsUnique();
+
+            modelBuilder.Entity<ApplicationModel>()
+                .HasOne(a => a.Expenses)
+                .WithOne(e => e.application)
+                .HasForeignKey<ExpensesModel>(e => e.ApplicationId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             // =========================
             // APPLICATION -> BANKING
             // =========================
 
+            modelBuilder.Entity<BankingModel>()
+                .HasIndex(b => b.ApplicationId)
+                .IsUnique();
+
             modelBuilder.Entity<ApplicationModel>()
                 .HasOne(a => a.Banking)
                 .WithOne(b => b.application)
                 .HasForeignKey<BankingModel>(b => b.ApplicationId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
 
             // =========================
             // APPLICATION -> EMPLOYER
             // =========================
 
+            modelBuilder.Entity<EmployerModel>()
+                .HasIndex(e => e.ApplicationId)
+                .IsUnique();
+
             modelBuilder.Entity<ApplicationModel>()
                 .HasOne(a => a.Employer)
                 .WithOne(e => e.application)
                 .HasForeignKey<EmployerModel>(e => e.ApplicationId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
 
+            // =========================
+            // APPLICATION -> DOCUMENTS
+            // =========================
 
+            modelBuilder.Entity<ApplicationDocument>()
+                .HasOne(d => d.Application)
+                .WithMany(a => a.Documents)
+                .HasForeignKey(d => d.ApplicationId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             // =========================
             // DECIMAL PRECISION
             // =========================
 
             modelBuilder.Entity<LoanModel>()
-       .Property(l => l.monthlyPayment)
-       .HasPrecision(18, 2);
+                .Property(l => l.Amount)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<LoanModel>()
+                .Property(l => l.monthlyPayment)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<LoanModel>()
+                .Property(l => l.RemainingBalance)
+                .HasPrecision(18, 2);
+
+            // =========================
+            // STORED PROCEDURE DTO
+            // =========================
 
             modelBuilder.Entity<StatusDto>()
                 .HasNoKey();

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LoanApplicationAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class firstmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -44,14 +44,24 @@ namespace LoanApplicationAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "StatusDtos",
+                columns: table => new
+                {
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Bankings",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AccountType = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BankName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Branch = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AccountType = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    BankName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Branch = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PaymentDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ApplicationId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -63,7 +73,7 @@ namespace LoanApplicationAPI.Migrations
                         column: x => x.ApplicationId,
                         principalTable: "Applications",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -108,7 +118,7 @@ namespace LoanApplicationAPI.Migrations
                         column: x => x.ApplicationId,
                         principalTable: "Applications",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -117,11 +127,12 @@ namespace LoanApplicationAPI.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    loanTermMonths = table.Column<int>(type: "int", nullable: false),
-                    interestRate = table.Column<int>(type: "int", nullable: false),
+                    loanTermMonths = table.Column<int>(type: "int", nullable: true),
+                    interestRate = table.Column<int>(type: "int", nullable: true),
                     Amount = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    monthlyPayment = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    monthlyPayment = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: true),
+                    RemainingBalance = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: true),
                     ApplicationId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -160,7 +171,7 @@ namespace LoanApplicationAPI.Migrations
                         column: x => x.ApplicationId,
                         principalTable: "Applications",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -469,12 +480,14 @@ namespace LoanApplicationAPI.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Loan_ApplicationId",
                 table: "Loan",
-                column: "ApplicationId");
+                column: "ApplicationId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_MonthlyExpense_ApplicationId",
                 table: "MonthlyExpense",
-                column: "ApplicationId");
+                column: "ApplicationId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_SystemCode_CreatedById",
@@ -609,6 +622,9 @@ namespace LoanApplicationAPI.Migrations
 
             migrationBuilder.DropTable(
                 name: "MonthlyExpense");
+
+            migrationBuilder.DropTable(
+                name: "StatusDtos");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

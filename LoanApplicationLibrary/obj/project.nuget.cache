@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yipATe+jwHM=",
+  "dgSpecHash": "pkt2sehScmY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\Documents\\LoanSolutionApplication\\LoanApplicationLibrary\\LoanApplicationLibrary.csproj",
+  "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\LoanSolutionApplication\\LoanApplicationLibrary\\LoanApplicationLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

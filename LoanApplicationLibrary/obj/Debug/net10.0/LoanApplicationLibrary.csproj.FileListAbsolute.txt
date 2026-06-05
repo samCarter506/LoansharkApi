@@ -27,3 +27,4 @@ C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationLibrary\obj\Deb
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationLibrary\obj\Debug\net10.0\LoanApplicationLibrary.pdb
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationLibrary\obj\Debug\net10.0\LoanApplicationLibrary.genruntimeconfig.cache
 C:\Users\lenovo\Documents\LoanSolutionApplication\LoanApplicationLibrary\obj\Debug\net10.0\ref\LoanApplicationLibrary.dll
+C:\Users\lenovo\source\repos\LoanSolutionApplication\LoanApplicationLibrary\obj\Debug\net10.0\LoanApplicationLibrary.sourcelink.json
