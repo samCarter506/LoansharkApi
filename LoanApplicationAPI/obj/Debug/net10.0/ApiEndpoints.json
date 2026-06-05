@@ -63,26 +63,6 @@
         "IsRequired": false
       },
       {
-        "Name": "AccountType",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "BankName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Branch",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PaymentDate",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
         "Name": "Employer",
         "Type": "System.String",
         "IsRequired": false

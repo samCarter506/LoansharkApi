@@ -14,13 +14,6 @@ namespace LoanApplicationAPI.Models.DTO
         public  string Cellphone { get; set; }
         public string? Status { get; set; }
         public decimal Amount { get; set; }
-
-    
-        public string? AccountType { get; set; }
-        public string? BankName { get; set; }
-        public string? Branch { get; set; }
-        public DateTime? PaymentDate { get; set; }
-
   
         public string Employer {  get; set; }
         public double NetSalary { get;set;  }

@@ -2,7 +2,6 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
-  <Project Path="AfforbailityCheckService/AfforbailityCheckService.csproj" Id="d0b893a5-b240-4839-b482-2af200c6c4aa" />
   <Project Path="LoanApplicationAPI/LoanApplicationAPI.csproj" />
   <Project Path="LoanApplicationLibrary/LoanApplicationLibrary.csproj" />
 </Solution>

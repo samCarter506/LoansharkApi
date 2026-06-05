@@ -55,19 +55,6 @@
                     "type": "number",
                     "format": "double"
                   },
-                  "AccountType": {
-                    "type": "string"
-                  },
-                  "BankName": {
-                    "type": "string"
-                  },
-                  "Branch": {
-                    "type": "string"
-                  },
-                  "PaymentDate": {
-                    "type": "string",
-                    "format": "date-time"
-                  },
                   "Employer": {
                     "type": "string"
                   },
@@ -177,18 +164,6 @@
                   "style": "form"
                 },
                 "Amount": {
-                  "style": "form"
-                },
-                "AccountType": {
-                  "style": "form"
-                },
-                "BankName": {
-                  "style": "form"
-                },
-                "Branch": {
-                  "style": "form"
-                },
-                "PaymentDate": {
                   "style": "form"
                 },
                 "Employer": {
@@ -1128,23 +1103,6 @@
           "amount": {
             "type": "number",
             "format": "double"
-          },
-          "accountType": {
-            "type": "string",
-            "nullable": true
-          },
-          "bankName": {
-            "type": "string",
-            "nullable": true
-          },
-          "branch": {
-            "type": "string",
-            "nullable": true
-          },
-          "paymentDate": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
           },
           "employer": {
             "type": "string",

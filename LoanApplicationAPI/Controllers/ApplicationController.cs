@@ -24,24 +24,162 @@ namespace LoanApplicationAPI.Controllers
         public IApplicationData applicationData { get; set; }
         public IBankingData bankingData { get; set; }
         public IEmployerData employerData { get; set; }
-        public ApplicationController(ApplicationDbContext db,IDataAccess data)
+        public ApplicationController(ApplicationDbContext db, IDataAccess data)
         {
             _context = db;
-            applicationData= new ApplicationData(data);
-            bankingData=new BankingData(data);
-            employerData=new EmployerData(data);
+            applicationData = new ApplicationData(data);
+            bankingData = new BankingData(data);
+            employerData = new EmployerData(data);
             loanCalculationData = new LoanCalculationData(db);
         }
+
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetApplications()
         {
-            var applications = await _context.Applications
-                .Include(a => a.Banking)
+            try
+            {
+                var applications = await _context.Applications
+                    .Include(a => a.Employer)
+                    .Include(a => a.Documents)
+                    .Include(a => a.Loan)
+                    .Include(a => a.Expenses)
+                    .Select(a => new ApplicantDto
+                    {
+                        Id = a.Id,
+                        NationalId = a.NationalId,
+                        Email = a.Email,
+                        Cellphone = a.Cellphone,
+                        Address = a.Address,
+                        FullName = a.FullName,
+                        Surname = a.Surname,
+
+                        // EMPLOYER
+                        Employer = a.Employer != null
+                            ? a.Employer.Employer
+                            : "",
+
+                        GrossSalary = a.Employer != null
+                            ? a.Employer.GrossSalary
+                            : 0,
+
+                        NetSalary = a.Employer != null
+                            ? a.Employer.NetSalary
+                            : 0,
+
+                        // LOAN
+                        Amount = a.Loan != null
+                            ? a.Loan.Amount
+                            : 0,
+
+                        Status = a.Loan != null
+                            ? a.Loan.Status
+                            : "Pending",
+
+                        interestRate = a.Loan != null
+                            ? (a.Loan.interestRate ?? 0)
+                            : 0,
+
+                        loanTermMonths = a.Loan != null
+                            ? (a.Loan.loanTermMonths ?? 0)
+                            : 0,
+
+                        MonthlyPayment = a.Loan != null
+                            ? Convert.ToDouble(a.Loan.monthlyPayment ?? 0)
+                            : 0,
+
+                        // EXPENSES
+                        dependents = a.Expenses != null
+                            ? a.Expenses.dependents
+                            : 0,
+
+                        rentAmount = a.Expenses != null
+                            ? a.Expenses.rentAmount
+                            : 0,
+
+                        foodExpenses = a.Expenses != null
+                            ? a.Expenses.foodExpenses
+                            : 0,
+
+                        transportExpenses = a.Expenses != null
+                            ? a.Expenses.transportExpenses
+                            : 0,
+
+                        electricityExpenses = a.Expenses != null
+                            ? a.Expenses.electricityExpenses
+                            : 0,
+
+                        waterExpenses = a.Expenses != null
+                            ? a.Expenses.waterExpenses
+                            : 0,
+
+                        existingLoanRepayments = a.Expenses != null
+                            ? a.Expenses.existingLoanRepayments
+                            : 0,
+
+                        otherExpenses = a.Expenses != null
+                            ? a.Expenses.otherExpenses
+                            : 0,
+
+                        monthlyExpenses = a.Expenses != null
+                            ? a.Expenses.monthlyExpenses
+                            : 0,
+
+                        TotalExpense = a.Expenses != null
+                            ? a.Expenses.TotalExpense
+                            : 0,
+
+                        // DOCUMENTS
+                        Documents = a.Documents.Select(d => new DocumentsDto
+                        {
+                            ApplicationId = d.ApplicationId,
+                            DocumentType = d.DocumentType,
+                            FileName = d.FileName,
+                            FilePath = d.FilePath,
+                            UploadedDate = d.UploadedDate
+                        }).ToList()
+                    })
+                    .ToListAsync();
+
+                return Ok(applications);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    Error = ex.Message,
+                    InnerException = ex.InnerException?.Message,
+                    StackTrace = ex.StackTrace
+                });
+            }
+        }
+        [HttpGet("checkstatus/{nationalId}")]
+        public async Task<IActionResult> CheckStatus(string nationalId)
+        {
+            var result = await _context.StatusDtos
+                .FromSqlRaw("EXEC checkStatus @NationalId = {0}", nationalId)
+                .ToListAsync();
+
+            if (result == null || !result.Any())
+            {
+                return NotFound("No application found");
+            }
+
+            return Ok(result);
+        }
+
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetApplication(int id)
+        {
+            var application = await _context.Applications
+               // .Include(a => a.Banking)
                 .Include(a => a.Employer)
                 .Include(a => a.Documents)
                 .Include(a => a.Loan)
                 .Include(a => a.Expenses)
+                .Where(a => a.Id == id)
                 .Select(a => new ApplicantDto
                 {
                     Id = a.Id,
@@ -52,13 +190,13 @@ namespace LoanApplicationAPI.Controllers
                     FullName = a.FullName,
                     Surname = a.Surname,
 
-                    // BANKING
-                    AccountType = a.Banking.AccountType,
-                    BankName = a.Banking.BankName,
-                    Branch = a.Banking.Branch,
-                    PaymentDate = a.Banking.PaymentDate,
+                    //// BANKING
+                    //AccountType = a.Banking.AccountType,
+                    //BankName = a.Banking.BankName,
+                    //Branch = a.Banking.Branch,
+                    //PaymentDate = a.Banking.PaymentDate,
 
-                    // EMPLOYER
+                    //// EMPLOYER
                     Employer = a.Employer.Employer,
                     GrossSalary = a.Employer.GrossSalary,
                     NetSalary = a.Employer.NetSalary,
@@ -68,8 +206,6 @@ namespace LoanApplicationAPI.Controllers
                     Status = a.Loan.Status,
                     interestRate = a.Loan.interestRate,
                     loanTermMonths = a.Loan.loanTermMonths,
-                    MonthlyPayment = Convert.ToDouble(a.Loan.monthlyPayment),
-
 
                     // EXPENSES
                     dependents = a.Expenses.dependents,
@@ -93,104 +229,23 @@ namespace LoanApplicationAPI.Controllers
                         UploadedDate = d.UploadedDate
                     }).ToList()
                 })
-                .ToListAsync();
+                .FirstOrDefaultAsync();
 
-            return Ok(applications);
+            if (application == null)
+                return NotFound("Application not found");
+
+            return Ok(application);
         }
-
-        [HttpGet("checkstatus/{nationalId}")]
-        public async Task<IActionResult> CheckStatus(string nationalId)
-        {
-            var result = await _context.StatusDtos
-                .FromSqlRaw("EXEC checkStatus @NationalId = {0}", nationalId)
-                .ToListAsync();
-
-            if (result == null || !result.Any())
-            {
-                return NotFound("No application found");
-            }
-
-            return Ok(result);
-        }
-
-
-        [Authorize(Roles = "Admin")]
-        [HttpGet("{id}")]
-public async Task<IActionResult> GetApplication(int id)
-{
-    var application = await _context.Applications
-        .Include(a => a.Banking)
-        .Include(a => a.Employer)
-        .Include(a => a.Documents)
-        .Include(a => a.Loan)
-        .Include(a => a.Expenses)
-        .Where(a => a.Id == id)
-        .Select(a => new ApplicantDto
-        {
-            Id = a.Id,
-            NationalId = a.NationalId,
-            Email = a.Email,
-            Cellphone = a.Cellphone,
-            Address = a.Address,
-            FullName = a.FullName,
-            Surname = a.Surname,
-
-            // BANKING
-            AccountType = a.Banking.AccountType,
-            BankName = a.Banking.BankName,
-            Branch = a.Banking.Branch,
-            PaymentDate = a.Banking.PaymentDate,
-
-            // EMPLOYER
-            Employer = a.Employer.Employer,
-            GrossSalary = a.Employer.GrossSalary,
-            NetSalary = a.Employer.NetSalary,
-
-            // LOAN
-            Amount = a.Loan.Amount,
-            Status = a.Loan.Status,
-            interestRate = a.Loan.interestRate,
-            loanTermMonths = a.Loan.loanTermMonths,
-
-            // EXPENSES
-            dependents = a.Expenses.dependents,
-            rentAmount = a.Expenses.rentAmount,
-            foodExpenses = a.Expenses.foodExpenses,
-            transportExpenses = a.Expenses.transportExpenses,
-            electricityExpenses = a.Expenses.electricityExpenses,
-            waterExpenses = a.Expenses.waterExpenses,
-            existingLoanRepayments = a.Expenses.existingLoanRepayments,
-            otherExpenses = a.Expenses.otherExpenses,
-            monthlyExpenses = a.Expenses.monthlyExpenses,
-            TotalExpense = a.Expenses.TotalExpense,
-
-            // DOCUMENTS
-            Documents = a.Documents.Select(d => new DocumentsDto
-            {
-                ApplicationId = d.ApplicationId,
-                DocumentType = d.DocumentType,
-                FileName = d.FileName,
-                FilePath = d.FilePath,
-                UploadedDate = d.UploadedDate
-            }).ToList()
-        })
-        .FirstOrDefaultAsync();
-
-    if (application == null)
-        return NotFound("Application not found");
-
-    return Ok(application);
-}
         [Authorize]
         [HttpPost]
-       
+
         public async Task<IActionResult> CreateApplication([FromForm] ApplicantDto obj)
         {
             ApplicationModel applicationModel = new ApplicationModel();
             BankingModel bankingModel = new BankingModel();
             EmployerModel employerModel = new EmployerModel();
             ApplicationDocument document = new ApplicationDocument();
-            ExpensesModel expenses= new ExpensesModel();
+            ExpensesModel expenses = new ExpensesModel();
             LoanModel loan = new LoanModel();
 
 
@@ -198,7 +253,7 @@ public async Task<IActionResult> GetApplication(int id)
 
             try
             {
-                
+
                 applicationModel.Email = obj.Email;
                 applicationModel.Surname = obj.Surname;
                 applicationModel.Address = obj.Address;
@@ -208,7 +263,7 @@ public async Task<IActionResult> GetApplication(int id)
 
 
                 _context.Applications.Add(applicationModel);
-               // await _context.SaveChangesAsync();
+                // await _context.SaveChangesAsync();
 
                 try
                 {
@@ -227,7 +282,7 @@ public async Task<IActionResult> GetApplication(int id)
 
 
 
-                employerModel.ApplicationId = applicationModel.Id; 
+                employerModel.ApplicationId = applicationModel.Id;
                 employerModel.NetSalary = obj.NetSalary;
                 employerModel.GrossSalary = obj.GrossSalary;
                 employerModel.Employer = obj.Employer;
@@ -245,17 +300,17 @@ public async Task<IActionResult> GetApplication(int id)
                 expenses.electricityExpenses = obj.electricityExpenses;
                 expenses.existingLoanRepayments = obj.existingLoanRepayments;
                 expenses.rentAmount = obj.rentAmount;
-            
+
                 _context.MonthlyExpense.Add(expenses);
 
                 //===========================
                 // Loan
                 //===========================
-                loan.Amount=obj.Amount;
+                loan.Amount = obj.Amount;
                 loan.Status = "Pending";
-               // loan.loanTermMonths= obj.loanTermMonths;
-              //  loan.interestRate=obj.interestRate;
-                loan.ApplicationId=applicationModel.Id;
+                // loan.loanTermMonths= obj.loanTermMonths;
+                //  loan.interestRate=obj.interestRate;
+                loan.ApplicationId = applicationModel.Id;
                 _context.Loan.Add(loan);
 
                 // ==========================
@@ -318,7 +373,7 @@ public async Task<IActionResult> GetApplication(int id)
                     TransactionType = "Application Add",
                     TransactionData = json,
                     TransactionDate = DateTime.Now,
-                    CreatedById =userId
+                    CreatedById = userId
                 };
 
                 _context.Audit.Add(userAudit);
@@ -334,7 +389,7 @@ public async Task<IActionResult> GetApplication(int id)
                     applicationId = applicationModel.Id
                 });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await transaction.RollbackAsync();
 
@@ -372,13 +427,13 @@ public async Task<IActionResult> GetApplication(int id)
                 application.NationalId = obj.NationalId;
 
                 // BANKING
-                if (application.Banking != null)
-                {
-                    application.Banking.BankName = obj.BankName;
-                    application.Banking.Branch = obj.Branch;
-                    application.Banking.AccountType = obj.AccountType;
-                    application.Banking.PaymentDate = obj.PaymentDate;
-                }
+                //if (application.Banking != null)
+                //{
+                //    application.Banking.BankName = obj.BankName;
+                //    application.Banking.Branch = obj.Branch;
+                //    application.Banking.AccountType = obj.AccountType;
+                //    application.Banking.PaymentDate = obj.PaymentDate;
+                //}
 
                 // EMPLOYER
                 if (application.Employer != null)
@@ -461,42 +516,47 @@ public async Task<IActionResult> GetApplication(int id)
                     return NotFound();
                 }
 
-                // =========================
-                // UPDATE LOAN
-                // =========================
+                // Update Loan Details
+                application.Loan.interestRate = obj.interestRate;
+                application.Loan.loanTermMonths = obj.loanTermMonths;
+                application.Loan.Status = obj.Status;
 
-                application.Loan.interestRate =
-                    obj.interestRate;
+                decimal monthlyPayment = 0;
 
-                application.Loan.loanTermMonths =
-                    obj.loanTermMonths;
+                // Only calculate if not rejected
+                if (obj.Status != "Rejected")
+                {
+                    var result = await loanCalculationData.LoanCalculations(id);
 
-                application.Loan.Status =
-                    obj.Status;
+                    monthlyPayment = result.MonthlyPayment;
 
-                // =========================
-                // CALCULATE PAYMENT
-                // =========================
-
-                var result =
-                    await loanCalculationData.LoanCalculations(id);
-
-                application.Loan.monthlyPayment =
-                    result.MonthlyPayment;
+                    application.Loan.monthlyPayment = result.MonthlyPayment;
+                    application.Loan.RemainingBalance = result.Balance;
+                }
+                else
+                {
+                    application.Loan.monthlyPayment = 0;
+                    application.Loan.RemainingBalance = 0;
+                }
 
                 await _context.SaveChangesAsync();
 
                 return Ok(new
                 {
                     message = "Loan updated successfully",
-                    monthlyPayment = result.MonthlyPayment
+                    monthlyPayment = monthlyPayment,
+                    status = application.Loan.Status
                 });
             }
             catch (Exception err)
             {
-                return StatusCode(500, err.Message);
+                return StatusCode(500, new
+                {
+                    error = err.Message
+                });
             }
         }
+
         [Authorize(Roles = "Admin")]
         [HttpPut("calcpayment/{id}")]
         public async Task<IActionResult> CalculatePayment(int id)
@@ -529,7 +589,7 @@ public async Task<IActionResult> GetApplication(int id)
 
                 application.Loan.monthlyPayment =
                     result.MonthlyPayment;
-                application.Loan.RemainingBalance=result.Balance;
+                application.Loan.RemainingBalance = result.Balance;
 
                 // OPTIONAL APPROVAL LOGIC
                 if (result.Balance > 2000)
@@ -594,7 +654,7 @@ public async Task<IActionResult> GetApplication(int id)
             return "/uploads/" + uniqueFileName;
         }
 
-       
+
 
 
     }
@@ -602,8 +662,8 @@ public async Task<IActionResult> GetApplication(int id)
     public class LoanChargeDto
     {
         public int loanTermMonths { get; set; }
-        public  int interestRate { get; set; }
+        public int interestRate { get; set; }
         public string Status { get; set; }
-       
+
     }
 }
