@@ -136,75 +136,36 @@ namespace LoanApplicationAPI.Controllers
         // LOGIN
         // =========================================
         [HttpPost("signin")]
-        public async Task<IActionResult> SignIn(
-            LoginDto model)
+        public async Task<IActionResult> SignIn(LoginDto model)
         {
-           
-            var user =
-                await _userManager
-                    .FindByEmailAsync(model.email);
-
-            if (user == null)
+            try
             {
-                return Unauthorized(new
-                {
-                    message = "Invalid email"
-                });
+                var user = await _userManager.FindByEmailAsync(model.email);
+
+                if (user == null)
+                    return Unauthorized("Invalid credentials");
+
+                var validPassword =
+                    await _userManager.CheckPasswordAsync(user, model.password);
+
+                if (!validPassword)
+                    return Unauthorized("Invalid credentials");
+
+                // generate token
+
+                return Ok();
             }
-
-            var validPassword =
-                await _userManager
-                    .CheckPasswordAsync(
-                        user,
-                        model.password);
-
-            if (!validPassword)
+            catch (Exception ex)
             {
-                return Unauthorized(new
-                {
-                    message = "Invalid password"
-                });
+                return StatusCode(500, ex.ToString());
             }
-
-            var roles =
-                await _userManager
-                    .GetRolesAsync(user);
-
-            var token =
-                _jwtService.GenerateToken(
-                    user,
-                    roles);
-
-            Response.Cookies.Append(
-                "access_token",
-                token,
-                new CookieOptions
-                {
-                    HttpOnly = true,
-
-                    Secure = true,
-
-                    SameSite =
-                        SameSiteMode.None,
-
-                    Expires =
-                        DateTime.UtcNow
-                            .AddHours(6)
-                });
-
-            return Ok(new
-            {
-                message =
-                    "Login successful"
-            });
         }
-
         // =========================================
         // CURRENT USER
         // =========================================
- 
 
-    [Authorize]
+
+        [Authorize]
     [HttpGet("me")]
     public IActionResult Me()
     {
