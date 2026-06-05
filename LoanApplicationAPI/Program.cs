@@ -5,46 +5,82 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Services
+// ============================================
+// SERVICES
+// ============================================
+
 builder.Services.AddControllers();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentity<ApplicationUser, UserRoles>()
+builder.Services
+    .AddIdentity<ApplicationUser, UserRoles>(options =>
+    {
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = true;
+        options.Password.RequireUppercase = true;
+        options.Password.RequireNonAlphanumeric = true;
+        options.Password.RequiredLength = 8;
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
+
+// ============================================
+// CORS
+// ============================================
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend",
-        policy =>
-        {
-            policy
-                .WithOrigins(
-                    "https://loanshark-jd1g.vercel.app",
-                    "http://localhost:3000"
-                )
-                .AllowAnyHeader()
-                .AllowAnyMethod()
-                .AllowCredentials();
-        });
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy
+            .WithOrigins(
+                "https://loanshark-jd1g.vercel.app",
+                "http://localhost:3000"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
 });
 
 var app = builder.Build();
+
+// ============================================
+// MIDDLEWARE
+// ============================================
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// Enable Swagger on Render too
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.UseHttpsRedirection();
+
+app.UseRouting();
+
 app.UseCors("AllowFrontend");
+
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 
-
-
 // ============================================
-// DATABASE + ROLE + ADMIN SEEDING
+// DATABASE MIGRATION + ROLE SEEDING
 // ============================================
 
 using (var scope = app.Services.CreateScope())
@@ -53,21 +89,16 @@ using (var scope = app.Services.CreateScope())
 
     try
     {
-        var db =
+        var dbContext =
             services.GetRequiredService<ApplicationDbContext>();
 
-        // FIRST
-        await db.Database.MigrateAsync();
+        await dbContext.Database.MigrateAsync();
 
         var roleManager =
             services.GetRequiredService<RoleManager<UserRoles>>();
 
         var userManager =
             services.GetRequiredService<UserManager<ApplicationUser>>();
-
-        // ==========================================
-        // CREATE ROLES
-        // ==========================================
 
         string[] roles =
         {
@@ -87,45 +118,51 @@ using (var scope = app.Services.CreateScope())
             }
         }
 
-        // ==========================================
-        // CREATE ADMIN
-        // ==========================================
-
         var adminEmail = "admin@loan.co.za";
 
-        var admin =
+        var adminUser =
             await userManager.FindByEmailAsync(adminEmail);
 
-        if (admin == null)
+        if (adminUser == null)
         {
-            admin = new ApplicationUser
+            adminUser = new ApplicationUser
             {
                 UserName = adminEmail,
                 Email = adminEmail,
-                FirstName = "System Administrator",
-                LastName= "Administrator",
+                FirstName = "System",
+                LastName = "Administrator",
                 EmailConfirmed = true
             };
 
-            var result =
-                await userManager.CreateAsync(
-                    admin,
-                    "Admin@123456"
-                );
+            var result = await userManager.CreateAsync(
+                adminUser,
+                "Admin@123456"
+            );
 
             if (result.Succeeded)
             {
                 await userManager.AddToRoleAsync(
-                    admin,
+                    adminUser,
                     "Admin"
                 );
+            }
+            else
+            {
+                foreach (var error in result.Errors)
+                {
+                    Console.WriteLine(error.Description);
+                }
             }
         }
     }
     catch (Exception ex)
     {
-        Console.WriteLine(ex.ToString());
+        Console.WriteLine(ex);
     }
 }
+
+// ============================================
+// START APPLICATION
+// ============================================
 
 app.Run();
