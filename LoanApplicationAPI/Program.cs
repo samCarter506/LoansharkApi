@@ -42,10 +42,14 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy
-            .WithOrigins(
-                "https://loanshark-jd1g.vercel.app",
-                "http://localhost:3000"
-            )
+            .SetIsOriginAllowed(origin =>
+            {
+                if (string.IsNullOrEmpty(origin))
+                    return false;
+
+                return origin.EndsWith(".vercel.app")
+                       || origin == "http://localhost:3000";
+            })
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
