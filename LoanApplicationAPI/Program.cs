@@ -1,13 +1,17 @@
 using LoanApplicationAPI.Models;
 using LoanApplicationAPI.Services;
+using LoanApplicationLibrary.Data;
+using LoanApplicationLibrary.DataAccess;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ============================================
-// SERVICES
-// ============================================
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 builder.Services.AddControllers();
 
@@ -17,6 +21,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IDataAccess, DataAccess>();
+builder.Services.AddScoped<IApplicationData, ApplicationData>();
+builder.Services.AddScoped<IBankingData, BankingData>();
+builder.Services.AddScoped<IEmployerData, EmployerData>();
+builder.Services.AddScoped<ILoanCalculationData, LoanCalculationData>();
 
 builder.Services
     .AddIdentity<ApplicationUser, UserRoles>(options =>
@@ -30,47 +41,103 @@ builder.Services
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddAuthentication();
-builder.Services.AddAuthorization();
+builder.Services
+    .AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme =
+            JwtBearerDefaults.AuthenticationScheme;
 
-// ============================================
-// CORS
-// ============================================
+        options.DefaultChallengeScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+
+        options.DefaultScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+
+        options.TokenValidationParameters =
+            new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+
+                ValidIssuer =
+                    builder.Configuration["JwtSettings:Issuer"],
+
+                ValidAudience =
+                    builder.Configuration["JwtSettings:Audience"],
+
+                IssuerSigningKey =
+                    new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(
+                            builder.Configuration["JwtSettings:SecretKey"]!))
+            };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context =>
+            {
+                Console.WriteLine("JWT MESSAGE RECEIVED");
+
+                var token =
+                    context.Request.Cookies["access_token"];
+
+                Console.WriteLine($"COOKIE TOKEN = {token}");
+
+                if (!string.IsNullOrEmpty(token))
+                {
+                    context.Token = token;
+                }
+
+                return Task.CompletedTask;
+            },
+
+            OnTokenValidated = context =>
+            {
+                Console.WriteLine("TOKEN VALIDATED");
+                return Task.CompletedTask;
+            },
+
+            OnAuthenticationFailed = context =>
+            {
+                Console.WriteLine(
+                    $"AUTH FAILED = {context.Exception}");
+
+                return Task.CompletedTask;
+            }
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowFrontend", policy =>
-    {
-        policy
-            .SetIsOriginAllowed(origin =>
-            {
-                if (string.IsNullOrEmpty(origin))
-                    return false;
-
-                return origin.EndsWith(".vercel.app")
-                       || origin == "http://localhost:3000";
-            })
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
-    });
+    options.AddPolicy("AllowFrontend",
+        policy =>
+        {
+            policy
+                .WithOrigins(
+                    "http://localhost:3000",
+                    "https://localhost:3000",
+                    "https://loansharkportal.onrender.com")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
+        });
 });
 
 var app = builder.Build();
-
-// ============================================
-// MIDDLEWARE
-// ============================================
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-// Enable Swagger on Render too
-app.UseSwagger();
-app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
@@ -82,91 +149,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-// ============================================
-// DATABASE MIGRATION + ROLE SEEDING
-// ============================================
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    try
-    {
-        var dbContext =
-            services.GetRequiredService<ApplicationDbContext>();
-
-        await dbContext.Database.MigrateAsync();
-
-        var roleManager =
-            services.GetRequiredService<RoleManager<UserRoles>>();
-
-        var userManager =
-            services.GetRequiredService<UserManager<ApplicationUser>>();
-
-        string[] roles =
-        {
-            "Admin",
-            "User"
-        };
-
-        foreach (var role in roles)
-        {
-            if (!await roleManager.RoleExistsAsync(role))
-            {
-                await roleManager.CreateAsync(
-                    new UserRoles
-                    {
-                        Name = role
-                    });
-            }
-        }
-
-        var adminEmail = "admin@loan.co.za";
-
-        var adminUser =
-            await userManager.FindByEmailAsync(adminEmail);
-
-        if (adminUser == null)
-        {
-            adminUser = new ApplicationUser
-            {
-                UserName = adminEmail,
-                Email = adminEmail,
-                FirstName = "System",
-                LastName = "Administrator",
-                EmailConfirmed = true
-            };
-
-            var result = await userManager.CreateAsync(
-                adminUser,
-                "Admin@123456"
-            );
-
-            if (result.Succeeded)
-            {
-                await userManager.AddToRoleAsync(
-                    adminUser,
-                    "Admin"
-                );
-            }
-            else
-            {
-                foreach (var error in result.Errors)
-                {
-                    Console.WriteLine(error.Description);
-                }
-            }
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine(ex);
-    }
-}
-
-// ============================================
-// START APPLICATION
-// ============================================
 
 app.Run();

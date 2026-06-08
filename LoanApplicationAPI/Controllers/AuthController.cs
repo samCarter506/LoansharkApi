@@ -1,7 +1,7 @@
 ﻿using LoanApplicationAPI.Models;
 using LoanApplicationAPI.Models.DTO;
 using LoanApplicationAPI.Services;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -140,24 +140,59 @@ namespace LoanApplicationAPI.Controllers
         {
             try
             {
-                var user = await _userManager.FindByEmailAsync(model.email);
+                var user =
+                    await _userManager.FindByEmailAsync(model.email);
 
                 if (user == null)
-                    return Unauthorized("Invalid credentials");
+                {
+                    return Unauthorized(new
+                    {
+                        message = "Invalid email"
+                    });
+                }
 
                 var validPassword =
-                    await _userManager.CheckPasswordAsync(user, model.password);
+                    await _userManager.CheckPasswordAsync(
+                        user,
+                        model.password);
 
                 if (!validPassword)
-                    return Unauthorized("Invalid credentials");
+                {
+                    return Unauthorized(new
+                    {
+                        message = "Invalid password"
+                    });
+                }
 
-                // generate token
+                var roles =
+                    await _userManager.GetRolesAsync(user);
 
-                return Ok();
+                var token =
+                    _jwtService.GenerateToken(user, roles);
+
+                Response.Cookies.Append(
+                    "access_token",
+                    token,
+                    new CookieOptions
+                    {
+                        HttpOnly = true,
+                        Secure = true,
+                        SameSite = SameSiteMode.None,
+                        Expires = DateTime.UtcNow.AddHours(6)
+                    });
+
+                return Ok(new
+                {
+                    message = "Login successful"
+                });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex.ToString());
+                return StatusCode(500, new
+                {
+                    error = ex.Message,
+                    stack = ex.StackTrace
+                });
             }
         }
         // =========================================
@@ -165,31 +200,44 @@ namespace LoanApplicationAPI.Controllers
         // =========================================
 
 
-        [Authorize]
-    [HttpGet("me")]
-    public IActionResult Me()
-    {
-        return Ok(new
+        [Authorize(
+    AuthenticationSchemes =
+        JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet("me")]
+        public IActionResult Me()
         {
-            email =
-        User.FindFirst(ClaimTypes.Email)?.Value,
+            return Ok(new
+            {
+                authenticated =
+                    User.Identity?.IsAuthenticated,
 
-            fullname =
-        User.FindFirst(ClaimTypes.Name)?.Value,
+                userId =
+                    User.FindFirst(ClaimTypes.NameIdentifier)?.Value,
 
-            role =
-        User.FindFirst(ClaimTypes.Role)?.Value
-        });
-    }
-    // =========================================
-    // LOGOUT
-    // =========================================
-    [Authorize]
+                email =
+                    User.FindFirst(ClaimTypes.Email)?.Value,
+
+                fullname =
+                    User.FindFirst(ClaimTypes.Name)?.Value,
+
+                role =
+                    User.FindFirst(ClaimTypes.Role)?.Value
+            });
+        }
+        // =========================================
+        // LOGOUT
+        // =========================================
+        [Authorize]
         [HttpPost("logout")]
         public IActionResult Logout()
         {
             Response.Cookies.Delete(
-                "access_token");
+    "access_token",
+    new CookieOptions
+    {
+        Secure = true,
+        SameSite = SameSiteMode.None
+    });
 
             return Ok(new
             {
